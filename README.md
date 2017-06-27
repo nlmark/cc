@@ -1,18 +1,17 @@
 We, Coloclue, have the intention to test the following features in a production environment.
-- Large BGP communities (this will mainly be tested by Job Snijders, one of the persons that did work on RFC 8092)
-- IPv6 on vMX on NFX250 (we have the NFX250's)
+- Large BGP communities (more details below)
+- IPv6 on vMX on NFX250 (we have two NFX250's)
 
->    Customer Contact Details
->    ========================
->    Name            E-Mail          Tel No: Responsibility During Beta
-Network committee	routers@coloclue.net	N/A
+Customer Contact Details
+------------------------
+* Name: Network committee
+* E-mail: routers@coloclue.net
+* Telephone: N/A
+* Company name: Netwerkvereniging Coloclue
+* Job Title: N/A
+* Address: Frans Duwaerstraat 34 / 1318 AC / Almere / The Netherlands
 
- >   * What is your company name, job title and address?
-Netwerkvereniging Coloclue
-
->    * Would you be able to provide a reference for marketing of for a product
->      contained in this beta program ?
-Yes, this is not a problem
+We'd be happy to provide a reference for marketing for a product contained in this beta program.
 
 Additional information regarding our setup:
 - Our network has multiple peering connections, it is likely AMS-IX will be connected to the vMX/NFX. The peers we have are listed on https://github.com/coloclue/peering/blob/master/peers.yaml
@@ -21,6 +20,7 @@ Additional information regarding our setup:
 - We will inform you whenever we discover problems and think they might be related to the software/hardware
 
 Test support for the action communities listed below:
+```
 remarks:        ACTION COMMUNITIES:
 remarks:        ===================
 remarks:        RFC 1997  | Large      | Meaning (Action)
@@ -36,3 +36,4 @@ remarks:        -         | 8283:4:nnn | Do not export to peer AS nnn
 remarks:        65535:0   | -          | G-SHUT [draft-ietf-grow-bgp-gshut]
 remarks:        65535:666 | -          | BLACKHOLE [RFC 7999]
 remarks:        ----------+------------+-------------------------------------
+```
